@@ -12,6 +12,12 @@ function Home() {
         <UserContext.Consumer>
         {(context) => {
             console.log("context",context);
+    return (
+              <div>
+                <p>Name: {context?.loginData?.name}</p>
+                <p>Password: {context?.loginData?.password}</p>
+              </div>
+            );
         }}
       </UserContext.Consumer>
       </div>
